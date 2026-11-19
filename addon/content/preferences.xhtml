@@ -5,24 +5,32 @@
   onload="Zotero.__addonInstance__.hooks.onPrefsEvent('load', { window })"
 >
   <label><html:h2 data-l10n-id="pref-title"></html:h2></label>
-  <checkbox
-    id="zotero-prefpane-__addonRef__-enable"
-    preference="enable"
-    data-l10n-id="pref-enable"
-  />
-  <hbox>
+
+  <hbox align="center" style="margin-bottom: 8px; gap: 8px">
     <html:label
-      for="zotero-prefpane-__addonRef__-input"
-      data-l10n-id="pref-input"
+      for="zotero-prefpane-__addonRef__-copyMode"
+      data-l10n-id="pref-copy-mode"
+    ></html:label>
+    <menulist id="zotero-prefpane-__addonRef__-copyMode" preference="copyMode">
+      <menupopup>
+        <menuitem value="file" data-l10n-id="pref-mode-file" />
+        <menuitem value="ref" data-l10n-id="pref-mode-ref" />
+        <menuitem value="fulltext" data-l10n-id="pref-mode-fulltext" />
+      </menupopup>
+    </menulist>
+  </hbox>
+
+  <hbox align="center" style="margin-top: 6px; margin-bottom: 8px; gap: 8px">
+    <html:label
+      for="zotero-prefpane-__addonRef__-maxFullTextChars"
+      data-l10n-id="pref-max-fulltext"
     ></html:label>
     <html:input
-      type="text"
-      id="zotero-prefpane-__addonRef__-input"
-      preference="input"
+      type="number"
+      id="zotero-prefpane-__addonRef__-maxFullTextChars"
+      preference="maxFullTextChars"
+      style="width: 110px"
     ></html:input>
-  </hbox>
-  <hbox class="virtualized-table-container" flex="1" height="300px">
-    <html:div id="__addonRef__-table-container" />
   </hbox>
 </groupbox>
 <vbox>

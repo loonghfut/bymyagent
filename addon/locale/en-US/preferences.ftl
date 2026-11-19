@@ -1,5 +1,10 @@
-pref-title = Addon Template Example
-pref-enable =
-    .label = Enable
-pref-input = Input
-pref-help = { $name } Build { $version } { $time }
+pref-title = Agent Context Bridge Settings
+pref-copy-mode = Default Shortcut Action (Alt+Shift+C)
+pref-mode-file =
+    .label = Copy PDF Source File(s) (File Manager style)
+pref-mode-ref =
+    .label = Copy @File Path & Metadata
+pref-mode-fulltext =
+    .label = Copy Full Text & Metadata
+pref-max-fulltext = Max full-text characters per paper
+pref-help = { $name } v{ $version } (Built { $time })

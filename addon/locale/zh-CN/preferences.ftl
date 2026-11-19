@@ -1,5 +1,10 @@
-pref-title = 插件模板设置示例
-pref-enable =
-    .label = 开启
-pref-input = 输入
-pref-help = { $name } Build { $version } { $time }
+pref-title = AI 上下文桥接设置
+pref-copy-mode = 默认快捷键操作（Alt+Shift+C）
+pref-mode-file =
+    .label = 复制 PDF 源文件（支持多选，像文件管理器一样粘贴）
+pref-mode-ref =
+    .label = 复制 @文件路径与元数据
+pref-mode-fulltext =
+    .label = 复制 PDF 全文文本与元数据
+pref-max-fulltext = 单篇文献最大全文字符数限制
+pref-help = { $name } v{ $version }（构建于 { $time }）

@@ -1,14 +1,14 @@
 {
-  "name": "zotero-plugin-template",
+  "name": "zotero-agent-context",
   "type": "module",
-  "version": "3.1.0",
-  "description": "Zotero Plugin Template",
+  "version": "1.0.0",
+  "description": "Add currently reading or selected Zotero literature into local AI agents' context (Antigravity, Codex, Claude Code, etc.)",
   "config": {
-    "addonName": "Zotero Plugin Template",
-    "addonID": "addontemplate@euclpts.com",
-    "addonRef": "addontemplate",
-    "addonInstance": "AddonTemplate",
-    "prefsPrefix": "extensions.zotero.addontemplate"
+    "addonName": "Agent Context Bridge",
+    "addonID": "agent-context@zotero.local",
+    "addonRef": "agentcontext",
+    "addonInstance": "AgentContext",
+    "prefsPrefix": "extensions.zotero.agentcontext"
   },
   "repository": {
     "type": "git",
